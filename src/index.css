@@ -1,13 +1,206 @@
+* {
+  box-sizing: border-box;
+}
 body {
+  display:flex; 
+  flex-direction:column; 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+header {
+  width: 100%;
+  background-color: pink;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header a {
+  text-decoration: none;
+  color: hotpink;
+  padding-right: 1em;
+}
+header a:hover,
+header a:focus {
+  color: oldlace;
+}
+header span {
+  font-size: .8rem;
+}
+.title {
+  font-family: 'Nunito', sans-serif;
+}
+main {
+  text-align: center;
+  padding-bottom: 3em;
+}
+.item-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: auto;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+.favorites-container {
+  margin: 0 auto;
+  width: 400px;
+}
+.item {
+  margin: 1.2em;
+  padding: 1.2em;
+  background-color: oldlace;
+  width: 380px;
+  height: 250px;
+  border-radius: 15px;
+  line-height: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  text-align: left;
+}
+.item h1 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.item-desc {
+  height: 200px;
+}
+.item img {
+  height: 80%;
+  float: right;
+}
+.item span,
+.cart-item span {
+  color: turquoise;
+}
+.item h3 {
+  cursor: pointer;
+  color: hotpink;
+}
+.poem {
+  font-style: italic;
+}
+.item-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.icons {
+  font-size: 1.5rem;
+}
+.icons i {
+  cursor: pointer;
+  color: hotpink;
+}
+.icons i:hover {
+  color: turquoise;
+}
+.cart-page {
+  text-align: center;
+}
+.cart-item-container {
+  margin: 0 auto;
+}
+.cart-item {
+  background-color: oldlace;
+  width: 380px;
+  height: 110px;
+  margin: 0 auto;
+  border-radius: 15px;
+  margin-bottom: 1.5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.cart-item img {
+  height: 100px;
+  float: left;
+  padding: 1em;
+}
+.cart-item-remove {
+  margin: 1em;
+}
+.cart-item-count,
+.cart-item-count span {
+  cursor: pointer;
+  color: hotpink;
+  font-weight: bold;
+}
+.cart-item-count span:hover,
+.cart-item-count span:focus {
+  color: turquoise;
+}
+.remove:hover,
+.remove:focus {
+  color: turquoise;
+}
+.remove {
+  cursor: pointer;
+  font-weight: bold;
+  color: pink;
+}
+.remove:hover,
+.remove:focus {
+  color: hotpink;
+}
+a {
+  color: pink;
+  font-weight: bold;
+}
+a:hover,
+a:focus {
+  color: hotpink;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  background-color: pink;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  padding: .8em 1.2em;
+  margin: .2em;
+  margin-bottom: 3em;
+  box-shadow: 1px 2px rgba(0,0,0,0.2);
+}
+button:hover,
+button:focus {
+  background-color: turquoise;
+}
+.sort {
+  outline: none;
+  cursor: pointer;
+  background-color: white;
+  color: pink;
+  font-weight: bold;
+  border: none;
+}
+.sort:hover,
+.sort:focus {
+  color: hotpink;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em; 
+  background-color: pink;
+  color: hotpink;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+}
+.active {
+  color: hotpink;
+  cursor: pointer;
 }
